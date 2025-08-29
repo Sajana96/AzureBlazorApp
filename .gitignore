@@ -1,0 +1,33 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Visual Studio
+*.vs/
+
+# Logs
+*.log
+
+# Secrets
+appsettings.Development.json
+appsettings.Local.json
+
+# Publish
+*.publish.xml
+
+# Node (if using Blazor WASM with npm/yarn)
+node_modules/
+wwwroot/dist/
+/TestAzureClientWebApp/Properties/PublishProfiles
+/TestAzureClientWebApp/Properties/ServiceDependencies/blazorclient - Web Deploy
