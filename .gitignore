@@ -31,3 +31,4 @@ node_modules/
 wwwroot/dist/
 /TestAzureClientWebApp/Properties/PublishProfiles
 /TestAzureClientWebApp/Properties/ServiceDependencies/blazorclient - Web Deploy
+/TestAzureClientWebApp/Properties/ServiceDependencies/blazorclient-development - Web Deploy/profile.arm.json
