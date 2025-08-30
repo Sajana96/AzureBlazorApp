@@ -9,7 +9,7 @@ builder.Services.AddRazorComponents()
 // Add logging
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
-builder.Logging.AddDebug();
+builder.Logging.SetMinimumLevel(LogLevel.Trace);
 
 var app = builder.Build();
 
@@ -26,9 +26,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.MapGet("/ping", () => {
-    app.Logger.LogInformation($"Ping received at {DateTime.UtcNow}");
-    Results.Ok("pong"); });
+app.MapGet("/ping", () =>    Results.Ok("pong"));
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
